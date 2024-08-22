@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1 100%;
+    grid-template-rows: 3, 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#app {
+    display: grid;
+    grid-template-columns: 1 100%;
+    grid-template-rows: 3, 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1 100%;
+    grid-template-rows: 3, 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.show {
+    display: grid;
+    grid-template-columns: 1 100%;
+    grid-template-rows: 1, 100%;
+}
+input {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    padding: 5px;
+}
+#ask {
+    display: flex;
+    justify-content: center;
+    background-color: #188821;
+    margin-top: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+text {
+    color: white;
+}
+
+#showAnswer {
+    display: none;
+    background-image: url("8ballPop.png"); /* Background image */
+    background-size: 100% 100%; /* Ensure the image covers the entire popup */
+    background-position: center; /* Center the background image */
+    flex-direction: column; /* Align items vertikalt */
+    justify-content: center; /* Center items vertikalt */
+    align-items: center; /* Center items horizontally */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center; /* Sentrer text inni popupen */
+}
+
+.show button:hover {
+    background-color: rgb(113, 140, 139);
+    border-color: rgb(72, 255, 0);
+    border: 2px solid rgb(51, 255, 0);
+}
+
+p { 
+    text-align: center; 
+    font-weight: bold; 
+}
+
+.popup { 
+    width: 500px; 
+    height: 500px; 
+    border-radius: 26px; 
+    text-align: center; 
+    display: flex; /* Bruker flexbox for sentrering */
+    flex-direction: column; /* Justerer innhold vertikalt */
+    justify-content: center; /* Sentrerer innhold vertikalt */
+    align-items: center; /* Sentrerer innhold horisontalt */
+    transition: all 0.5s ease; 
+    transition-duration: 3s;
+} 
+
+#closeBtn { 
+    margin-top: 15px; 
+    background-color: #dddddd;
+    cursor: pointer;
+    border-radius: 26px;
+    height: 50px;
+    width: 150px;
+}
+
+.popup button { 
+    margin-top: 6px;
+}
+
+.popup button:hover { 
+    background-color: rgb(113, 140, 139); 
+    border-color: rgb(72, 255, 0);
+    border: 2px solid rgb(51, 255, 0);
+}
+
+#answerText { 
+    font-size: 40px; 
+    font-weight: bold; 
+    color: rgb(0, 0, 0); 
+    margin-top: 100px; 
+}
+
+h2 { 
+    color: rgb(0, 0, 0); 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-top: 60px; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: 999; 
+    display: none; 
+}
+
+#showAnswer.show + .overlay {
+    display: block;
+}
