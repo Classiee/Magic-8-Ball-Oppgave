@@ -19,7 +19,7 @@ function show() {
     </div>
     <div class="show">
         <input type="text" id="question" placeholder="Still spørsmålet ditt her">
-        <button id="ask">Ask the Magic 8 Ball!</button>
+        <button id="ask">Sjekk ditt svar!</button>
     </div>
     <div id="showAnswer" class="popup"> 
         <h2>Svaret ditt er:</h2>        
