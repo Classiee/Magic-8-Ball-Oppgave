@@ -45,6 +45,7 @@ function getRandomAnswer() {
 
 function showAnswer() {
     document.getElementById('answerText').innerHTML = answer;
+    document.getElementById('showAnswer').style.backgroundImage = 'url("8ballpop.png")';
     document.getElementById('showAnswer').style.display = 'block';
     document.querySelector('.overlay').style.display = 'block';
 }
