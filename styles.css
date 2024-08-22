@@ -57,12 +57,12 @@ text {
 
 #showAnswer {
     display: none;
-    background-image: url(8ballPop.png); /* Background image */
-    background-size: 100% 100%; /* Ensure the image covers the entire popup */
-    background-position: center; /* Center the background image */
-    flex-direction: column; /* Align items vertikalt */
-    justify-content: center; /* Center items vertikalt */
-    align-items: center; /* Center items horizontally */
+    background-image: url(8ballPop.png);
+    background-size: 100% 100%;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -70,7 +70,7 @@ text {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    text-align: center; /* Sentrer text inni popupen */
+    text-align: center;
 }
 
 .show button:hover {
@@ -89,10 +89,10 @@ p {
     height: 500px; 
     border-radius: 26px; 
     text-align: center; 
-    display: flex; /* Bruker flexbox for sentrering */
-    flex-direction: column; /* Justerer innhold vertikalt */
-    justify-content: center; /* Sentrerer innhold vertikalt */
-    align-items: center; /* Sentrerer innhold horisontalt */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s ease; 
     transition-duration: 3s;
 } 

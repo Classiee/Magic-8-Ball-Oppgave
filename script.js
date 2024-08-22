@@ -46,12 +46,12 @@ function getRandomAnswer() {
 function showAnswer() {
     document.getElementById('answerText').innerHTML = answer;
     document.getElementById('showAnswer').style.display = 'block';
-    document.querySelector('.overlay').style.display = 'block'; // Show the overlay
+    document.querySelector('.overlay').style.display = 'block';
 }
 
 function hidePopup() {
     document.getElementById('showAnswer').style.display = 'none';
-    document.querySelector('.overlay').style.display = 'none'; // Hide the overlay
+    document.querySelector('.overlay').style.display = 'none';
 }
 
 // Start appen
