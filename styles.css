@@ -57,7 +57,7 @@ text {
 
 #showAnswer {
     display: none;
-    background-image: url("8ballPop.png"); /* Background image */
+    background-image: url(8ballPop.png); /* Background image */
     background-size: 100% 100%; /* Ensure the image covers the entire popup */
     background-position: center; /* Center the background image */
     flex-direction: column; /* Align items vertikalt */
